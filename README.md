@@ -1,62 +1,40 @@
-# Zenvio Store
+# Zenvio Store — Modern Lifestyle Frontend
 
-A polished, responsive e-commerce landing page built as a frontend interface project.
-
-## Tech stack
-- Next.js App Router
-- React functional components and hooks
-- Tailwind CSS
-- Lucide icons
+A responsive, frontend-only lifestyle storefront built with Next.js, React and Tailwind CSS. The visual design uses sage green, warm neutrals, editorial typography and large lifestyle photography.
 
 ## Features
-- Mobile-first layout with tablet and desktop breakpoints
-- Accessible responsive navigation
-- Product search and category filtering
-- Reusable product cards
-- Interactive shopping bag with quantity controls and subtotal
-- Newsletter form UI (demonstration only; no data is saved)
-- SEO page metadata and semantic HTML
+- Mobile, tablet and desktop responsive layouts
+- Announcement strip and responsive navigation
+- Image-led hero and three clickable collection tiles
+- Searchable and filterable product catalog
+- Shopping bag with add/remove/quantity controls and subtotal
+- Demo newsletter form (no data stored)
+
+## Architecture
+- `app/page.jsx` — home page, collection filtering and shopping bag state
+- `app/layout.jsx` — app metadata and root layout
+- `app/globals.css` — base styles and font choices
+- `components/Header.jsx` — navigation and search input
+- `components/ProductCard.jsx` — reusable product display
+- `components/CartDrawer.jsx` — interactive cart drawer
+- `lib/products.js` — demo catalog data
+- `tailwind.config.js` — design colors and Tailwind configuration
+
+## Design decisions
+- Sage and warm neutrals provide a calm modern-lifestyle identity.
+- A high-contrast hero improves headline readability over photography.
+- Responsive grids adapt from one to two to three columns.
+- Reusable components isolate the navigation, catalog cards and cart.
+- Accessible labels and visible focus outlines support keyboard navigation.
 
 ## Run locally
-
-Install Node.js 20+ and then:
-
 ```bash
 npm install
 npm run dev
 ```
 
-Open the local development URL shown in the terminal. To check production compilation:
+## Deploy
+Import the repository into Vercel as a Next.js project with root directory `./`.
 
-```bash
-npm run build
-npm start
-```
-
-## Project structure
-
-- `app/layout.jsx` — document shell and metadata
-- `app/page.jsx` — homepage composition and interactive state
-- `app/globals.css` — Tailwind layers and global styles
-- `components/Header.jsx` — navigation, mobile menu and search
-- `components/ProductCard.jsx` — reusable product card
-- `components/CartDrawer.jsx` — interactive shopping bag
-- `lib/products.js` — sample product catalog
-- `tailwind.config.js` — design tokens and source scanning
-
-## Design decisions
-
-The visual system uses generous spacing, rounded cards, a restrained violet accent, bold headings and soft gradient product panels. The grid shifts from one column on narrow screens to two and three columns on wider screens. The catalog is intentionally static: this assessment focuses on frontend composition and responsive behavior rather than backend integrations.
-
-Product visuals use emoji placeholders to avoid dependence on remote assets. Pricing and products are illustrative. Cart state is in memory and resets on reload; checkout is intentionally disabled. The newsletter form does not send or store email addresses.
-
-## Deployment
-
-1. Create a new GitHub repository named `zenvio-store`.
-2. Upload the contents of this project directory to the repository root.
-3. In Vercel, import the GitHub repository and keep the detected Next.js settings.
-4. Deploy, then test the live site on phone, tablet and desktop screen widths.
-
-## Suggested demonstration video
-
-Show mobile navigation, scrolling, product filters, search, adding two products to the bag, quantity adjustments, and a desktop-width layout. Mention the static demo limitations.
+## Notes
+This is a portfolio/demo storefront. Checkout is intentionally disabled. Newsletter sign-up is simulated. Product and lifestyle photography is loaded from Unsplash URLs and requires an internet connection. Product imagery is illustrative, not guaranteed to match listed merchandise. No backend or payment processing is implemented.

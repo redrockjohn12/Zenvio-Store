@@ -1,1 +1,3 @@
-@tailwind base;@tailwind components;@tailwind utilities;html{scroll-behavior:smooth}body{background:#faf9fd;color:#101828}button,a{transition:all .2s ease}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #a99aff;outline-offset:3px}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}body{background:#fafaf6;color:#20332d;font-family:'DM Sans',sans-serif}h1,h2,.serif{font-family:'Playfair Display',serif}button,a{transition:all .2s ease}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #587663;outline-offset:3px}section{scroll-margin-top:110px}

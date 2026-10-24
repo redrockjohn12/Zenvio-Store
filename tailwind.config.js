@@ -1,1 +1,1 @@
-module.exports = {content:['./app/**/*.{js,jsx}','./components/**/*.{js,jsx}'],theme:{extend:{colors:{ink:'#101828',accent:'#6d4aff',mist:'#f7f6fb'}}},plugins:[]}
+module.exports = {content:['./app/**/*.{js,jsx}','./components/**/*.{js,jsx}'],theme:{extend:{colors:{ink:'#20332d',accent:'#587663',mist:'#f4f5ef'}}},plugins:[]}
